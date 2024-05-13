@@ -6,4 +6,4 @@ This repo is for archive AL rounds for image analysis and model construction
 
 ### Data_model folder
 - This folder include the direct input data set for training AL models. Note, the concentration of each amphiphiles are transformed by using logarithm (log1p, natural logarithm of one plus the input array)
-- df_input_20240429.csv is the data set for first AL round, df_input_20240510.csv is the data set for second AL round...etc.  
+- 'df_input_20240429.csv' is the data set for first AL round, 'df_input_20240510.csv' is the data set for second AL round...etc.  
