@@ -83,7 +83,7 @@ def run_batch_files_templates(file_folder, templates, PlateName,
             df1 = pd.DataFrame(results, columns=columns1)
 
             # Save the DataFrame to a CSV file
-            df1.to_csv(f"Results_{PlateName}/"+f"{filename}.csv", index=False)
+            df1.to_csv(f"../../MicroscopyImage/VesicleDetection/Results_{PlateName}/"+f"{filename}.csv", index=False)
             # Calculate vesicles area here?
             if number_vesicles == 0.:
                 total_area = 0.
@@ -112,7 +112,7 @@ def run_batch_files_templates(file_folder, templates, PlateName,
                 dfs.append(area_df)
 
         df2 = pd.concat(dfs, ignore_index=True)
-        df2.to_csv(f"Results_{PlateName}/"+f"{PlateName}_VesiclesSummary.csv", index=False)
+        df2.to_csv(f"../../MicroscopyImage/VesicleDetection/Results_{PlateName}/"+f"{PlateName}_VesiclesSummary.csv", index=False)
     else:
         print(f"Folder '{file_folder}' does not exist.")
     

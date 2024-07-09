@@ -118,7 +118,7 @@ def Enhance_contrast(path, PlateName, image_type, sigma_size=50):
     axs[4].axis('off')
 
     plt.tight_layout()
-    plt.savefig(f'Results_{PlateName}/'+f'{filename}_enhance_{formatted_datetime}.png')
+    plt.savefig(f'../../MicroscopyImage/VesicleDetection/Results_{PlateName}/'+f'{filename}_enhance_{formatted_datetime}.png')
     plt.close(fig)
 
     return noise_suppressed, image, filename

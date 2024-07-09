@@ -134,7 +134,7 @@ def Multi_template_match(filename, original_image, image, templates, PlateName, 
             rect = patches.Rectangle((x_min, y_min), length, length, linewidth=1, edgecolor='r', facecolor='none')
             ax.add_patch(rect)
 
-        plt.savefig(f'Results_{PlateName}/'+f'{filename}_TemplateMatch_{formatted_datetime}.png')
+        plt.savefig(f'../../MicroscopyImage/VesicleDetection/Results_{PlateName}/'+f'{filename}_TemplateMatch_{formatted_datetime}.png')
         plt.close(fig)
 
     return match_results, len_match_results
